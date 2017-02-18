@@ -1,12 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
+<!doctype html>
+<html class="no-js" lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>¡Qué bueno! - Registro</title>
+    <meta name="description" content="¡Qué bueno! El crédito más rápido de España">
+    <meta name="author" content="Nadal Soler">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');</script>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
 
-  <p>Lorem ipsum dolor sit amet...</p>
+    <div class="cookies-msg" id="cookies-msg">Le informamos que utilizamos cookies propias y de terceros para mejorar la experiencia de navegación. Al continuar navegando entendemos que acepta nuestra <a href="#" title="Política de Privacidad">política de privacidad y cookies</a></div>
 
-</body>
+    <header class="main-header">
+      <div class="container">
+        <span class="main-header__logo ico ico--logo"></span>
+        <ul class="main-header__certificates">
+          <li>
+            <span class="ico ico--verisign"></span>
+          </li>
+          <li>
+            <span class="ico ico--asnef"></span>
+          </li>
+          <li>
+            <span class="ico ico--confianza"></span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container container--bg">
+
+      <div class="signup signup--narrow">
+        <h1 class="signup__title">El crédito más rápido de España</h1>
+        <h2 class="signup__subtitle">¡Te presentamos hasta 300€ en sólo unos minutos!</h2>
+        <form class="signup__form" action="#" method="post" id="signup-form">
+          <fieldset>
+            <label class="label-inline required" for="user-name">Nombre y apellidos</label>
+            <input class="input-inline" id="user-name" name="user-name" type="text" placeholder="Alejandro García" required>
+            <label class="label-inline required"for="user-email">E-mail</label>
+            <input class="input-inline" id="user-email" name="user-email" type="email" placeholder="alejandrogarcia@gmail.com" required>
+            <label class="label-inline-offset" for="privacy-policy">
+              <input id="privacy-policy" name="privacy-policy" type="checkbox" required>
+              <p>He leído y acepto la <a href="#" title="Política de Privacidad">Política de Privacidad</a> y los <a href="#" title="Términos y condiciones">Términos y condiciones</a></p>
+            </label>
+          </fieldset>
+          <fieldset>
+            <p class="label-inline-offset">
+              <input class="btn" type="submit" value="Siguiente">
+              <a class="note" href="#">Ya soy cliente de Quebueno.es</a>
+            </p>
+          </fieldset>
+        </form>
+        <div class="signup__message is-hidden" id="signup-message">
+          <p class="signup__message__title">¡Gracias por enviar tus datos!</p>
+          <p class="signup__message__desc">Te hemos enviado un mail con la información para tu solicitud</p>
+        </div>
+      </div>
+
+      <div class="how-it-works how-it-works--narrow">
+        <h2 class="how-it-works__title">¿Cómo funciona?</h2>
+        <ol class="how-it-works__content">
+          <li>
+            <span class="ico ico--screen"></span>
+            <p>Indica qué cantidad necesitas y durante cuánto tiempo la quieres.</p>
+          </li>
+          <li>
+            <span class="ico ico--signup"></span>
+            <p>Completa el formulario en la página web. ¡Sin ningún papeleo adicional!</p>
+          </li>
+          <li>
+            <span class="ico ico--tick"></span>
+            <p>Evaluamos tu préstamo al instante (30 segundos)&hellip;</p>
+          </li>
+          <li>
+            <span class="ico ico--clock"></span>
+            <p>&hellip;y en 15 minutos, disfruta de tu dinero.</p>
+          </li>
+        </ol>
+      </div>
+
+    </div>
+
+    <footer class="main-footer">
+      <nav class="container">
+        <ul class="main-footer__links">
+          <li>
+            <a href="#" title="Cómo funciona">Cómo funciona</a>
+          </li>
+          <li>
+            <a href="#" title="Quiénes somos">Quiénes somos</a>
+          </li>
+          <li>
+            <a href="#" title="Política de privacidad">Política de privacidad</a>
+          </li>
+          <li>
+            <a href="#" title="Términos y condiciones">Términos y condiciones</a>
+          </li>
+          <li>
+            <a href="#" title="Aviso legal">Aviso legal</a>
+          </li>
+          <li>
+            <a href="#" title="Ayuda">Ayuda</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="main-footer__contact">Deenero Spain S.A. CIF A 65559296 &middot; Moll de Barcelona s/n, World Trade Center, 08039 Barcelona.</p>
+    </footer>
+
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
 </html>

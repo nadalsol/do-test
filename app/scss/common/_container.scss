@@ -1,0 +1,24 @@
+//
+// Container
+// --------------------------------------------------
+
+
+.container {
+  
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $space-giga-byte;
+  padding-right: $space-giga-byte;
+  @include clearfix;
+
+  &--bg {
+    background-color: $container-light;
+    @media #{$medium-up} {
+      background: $container-light url('../images/landing-woman-bg.jpg') no-repeat center bottom;
+      background-size: cover;
+    }
+  }
+
+}

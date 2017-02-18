@@ -1,0 +1,108 @@
+//
+// Mixins
+// --------------------------------------------------
+
+
+// Clearfix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+     -moz-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+// Responsive image
+// Keep images from scaling beyond the width of their parents.
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}
+
+// Btn hover
+@mixin btn-hover($color, $bg-color) {
+  color: $color;
+  background-color: $bg-color;
+  text-decoration: none;
+}
+
+// Sizing shortcuts
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// Transitions
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+
+// WebKit-style focus
+@mixin tab-focus() {
+  // Default
+  outline: thin dotted;
+  // WebKit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+// Sprite icon size and position
+@mixin sprite-icon($x-pos, $y-pos, $width, $height) {
+  background-position: $x-pos $y-pos;
+  width: $width;
+  height: $height;
+  line-height: $height;
+}
+
+// Reset default list styles
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  > dt,
+  > dd {
+    margin-left: 0;
+  }
+}
+
+// Turns list items into floated elements
+@mixin list-float() {
+  @include list-reset;
+  @include clearfix;
+  > li,
+  > dt,
+  > dd {
+    float: left;
+  }
+}
+
+// Turns list items into inline-block
+@mixin list-inline($pad-left: $space-byte, $pad-right: $space-byte) {
+  @include list-reset;
+  > li,
+  > dt,
+  > dd {
+    display: inline-block;
+    padding-left: $pad-left;
+    padding-right: $pad-right;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

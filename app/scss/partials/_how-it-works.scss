@@ -1,0 +1,44 @@
+//
+// How it works
+// --------------------------------------------------
+
+
+.how-it-works {
+
+  padding-top: $space-mega-byte;
+  padding-bottom: $space-mega-byte;
+  background-color: white;
+  text-align: center;
+
+  &__content {
+    font-family: $font-family-serif;
+    font-size: $font-size-sm;
+    color: $gray-light;
+    @include list-reset;
+    @media #{$medium-up} {
+      @include list-float;
+    }
+    > li {
+      padding: $space-kilo-byte;
+      @media #{$medium-up} {
+        min-height: 160px;
+        width: 25%;
+        border-right: 1px solid $gray-lightest;
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+    .ico {
+      margin-bottom: $space-kilo-byte;
+    }
+  }
+
+  &--narrow {
+    @media #{$medium-up} {
+      float: right;
+      width: 65%;
+    }
+  }
+  
+}

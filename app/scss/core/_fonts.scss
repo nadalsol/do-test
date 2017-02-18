@@ -1,0 +1,31 @@
+//
+// Fonts
+// --------------------------------------------------
+
+
+@font-face {
+  font-family: 'Bitter-Regular-webfont';
+  src: url('#{$font-path}/Bitter-Regular-webfont.eot');
+  src: url('#{$font-path}/Bitter-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('#{$font-path}/Bitter-Regular-webfont.svg') format('svg'),
+       url('#{$font-path}/Bitter-Regular-webfont.woff') format('woff'),
+       url('#{$font-path}/Bitter-Regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bitter-Italic-webfont';
+  src: url('#{$font-path}/Bitter-Italic-webfont.eot');
+  src: url('#{$font-path}/Bitter-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('#{$font-path}/Bitter-Italic-webfont.svg') format('svg'),
+       url('#{$font-path}/Bitter-Italic-webfont.woff') format('woff'),
+       url('#{$font-path}/Bitter-Italic-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bitter-Bold-webfont';
+  src: url('#{$font-path}/Bitter-Bold-webfont.eot');
+  src: url('#{$font-path}/Bitter-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('#{$font-path}/Bitter-Bold-webfont.svg') format('svg'),
+       url('#{$font-path}/Bitter-Bold-webfont.woff') format('woff'),
+       url('#{$font-path}/Bitter-Bold-webfont.ttf') format('truetype');
+}

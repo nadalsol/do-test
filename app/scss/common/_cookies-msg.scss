@@ -1,0 +1,21 @@
+//
+// Cookies Message
+// --------------------------------------------------
+
+
+.cookies-msg {
+
+  min-height: $cookies-msg-min-height;
+  padding-top: $space-kilo-byte;
+  padding-bottom: $space-kilo-byte;
+  background-color: $gray-lightest;
+  font-size: $font-size-sm;
+  text-align: center;
+  color: $gray-light;
+  @include size($cookies-msg-width, $cookies-msg-height);
+
+  a {
+    color: $gray-light;
+  }
+  
+}

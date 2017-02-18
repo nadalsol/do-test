@@ -68,7 +68,6 @@ gulp.task('js', function() {
   return jsbuild.pipe(gulp.dest(folder.dist + 'js/'));
 });
 
-
 // CSS processing
 gulp.task('css', function() {
   var
@@ -88,10 +87,18 @@ gulp.task('css', function() {
       errLogToConsole: true
     }))
     .pipe(gulp.dest(out));
+});
+
+// Fonts processing
+gulp.task('fonts', function() {
+  var out = folder.dist + 'fonts/';
+  return gulp.src(folder.app + 'fonts/**/*')
+    .pipe(gulp.dest(out))
 })
 
+
 // Run all tasks
-gulp.task('run', ['html', 'css', 'js']);
+gulp.task('run', ['html', 'css', 'js', 'fonts']);
 
 // Watch for changes
 gulp.task('watch', function() {
@@ -107,6 +114,9 @@ gulp.task('watch', function() {
 
   // css changes
   gulp.watch(folder.app + 'scss/**/*', ['css']);
+
+  // font changes
+  gulp.watch(folder.app + 'fonts/**/*', ['fonts']);
 
 });
 

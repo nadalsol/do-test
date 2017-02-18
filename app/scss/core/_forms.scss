@@ -1,0 +1,77 @@
+//
+// Forms
+// --------------------------------------------------
+
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+label {
+  display: block;
+  font-family: $font-family-serif-bd;
+  &.required:after {
+    content: ' *';
+  }
+}
+
+input[type="text"],
+input[type="email"] {
+  height: $input-height;
+  line-height: $input-height;
+  padding: $space-byte;
+  font-size: $font-size-sm;
+  border: 1px solid $gray-lighter;
+  border-radius: $border-radius-base;
+}
+
+.label-inline,
+.input-inline,
+.label-inline-offset {
+  @media #{$medium-up} {
+    float: left;
+    margin-bottom: $space-giga-byte;
+  }
+}
+
+.label-inline {
+  @media #{$medium-up} {
+    clear: left;
+    width: $label-inline-width;
+    margin-left: $label-inline-margin;
+    margin-right: $label-inline-margin;
+    line-height: $input-height;
+    text-align: right;
+  }
+}
+
+.input-inline {
+  width: 100%;
+  margin-bottom: $space-giga-byte;
+  @media #{$medium-up} {
+    width: $input-inline-width;
+    margin-left: $input-inline-margin;
+    margin-right: $input-inline-margin;
+  }
+}
+
+.label-inline-offset {
+  font-family: $font-family-serif;
+  font-size: $font-size-sm;
+  @media #{$medium-up} {
+    clear: left;
+    width: $label-inline-offset-width;
+    margin-left: $label-inline-offset-margin;
+    @include clearfix;
+  }
+  > input[type="checkbox"] {
+    float: left;
+    margin-top: 2px;
+    margin-right: $space-kilo-byte;
+    + p {
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+//
+// Sprites
+// --------------------------------------------------
+
+
+//
+// All icons receive the styles of the <span> or <i> tag with a base class of "ico",
+// and a modifier class to add bg position and size (i.e. "ico-dummy").
+// Your resulting HTML will look like...
+//
+// <i class="ico ico-dummy"></i>
+//
+//
+// Get your retina ready CSS sprite via "Retina CSS Sprite Generator"
+// http://retinaspritegenerator.com/
+//
+
+
+.ico {
+
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url($icon-sprite-path);
+  background-repeat: no-repeat;
+
+  &--logo            { @include sprite-icon(    0px,   0px, 165px, 50px ); }
+  &--screen          { @include sprite-icon( -182px,   0px,  67px, 67px ); }
+  &--signup          { @include sprite-icon( -332px,   0px,  72px, 67px ); }
+  &--tick            { @include sprite-icon( -475px,   0px,  72px, 67px ); }
+  &--clock           { @include sprite-icon( -632px,   0px,  72px, 67px ); }
+  &--verisign        { @include sprite-icon(    0px, -58px,  76px, 40px ); }
+  &--asnef           { @include sprite-icon(  -90px, -58px,  40px, 40px ); }
+  &--confianza       { @include sprite-icon( -133px, -57px,  41px, 38px ); }
+  
+  &--cross-sm        { @include sprite-icon( 0, 0, 0, 0 ); }
+  &--tick-sm         { @include sprite-icon( 0, 0, 0, 0 ); }
+}

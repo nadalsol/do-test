@@ -1,0 +1,33 @@
+//
+// Main Header
+// --------------------------------------------------
+
+
+.main-header {
+
+  padding-top: $space-kilo-byte;
+  padding-bottom: $space-kilo-byte;
+  background-color: white;
+  text-align: center;
+  min-height: $header-height;
+  @media #{$medium-up} {
+    @include size($header-width, $header-height);
+  }
+
+  &__logo {
+    @media #{$medium-up} {
+      float: left;
+      text-align: left;
+    }
+  }
+  &__certificates {
+    @media #{$medium-up} {
+      float: right;
+      text-align: right;
+    }
+    line-height: $header-element-height;
+    @include size($header-element-width, $header-element-height);
+    @include list-inline($space-kilo-byte, $space-kilo-byte);
+  }
+  
+}

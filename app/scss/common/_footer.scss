@@ -1,0 +1,30 @@
+//
+// Main Footer
+// --------------------------------------------------
+
+
+.main-footer {
+
+  min-height: $footer-min-height;
+  padding-top: $space-tera-byte;
+  padding-bottom: $space-tera-byte;
+  background-color: $gray-lightest;
+  font-family: $font-family-serif;
+  text-align: center;
+  color: $gray-light;
+  @include size($footer-width, $footer-height);
+
+  a {
+    color: $gray-light;
+  }
+  &__links {
+    font-size: $font-size-xs;
+    @include list-inline;
+  }
+  &__contact {
+    margin-top: $space-kilo-byte;
+    margin-bottom: 0;
+    font-size: $font-size-sm;
+  }
+  
+}

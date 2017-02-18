@@ -1,0 +1,53 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  margin-top: 0;
+  margin-bottom: ($line-height-computed / 2);
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1, .h1 {
+  font-size: $font-size-h1;
+  color: $brand-primary-dark;
+}
+h2, .h2 {
+  font-size: $font-size-h2;
+  color: $brand-primary;
+}
+h3, .h3 {
+  font-size: $font-size-h3;
+  color: $brand-primary;
+}
+
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+}
+
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: ($line-height-computed / 2);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}

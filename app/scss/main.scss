@@ -1,5 +1,41 @@
-/**
- * Main Styles
+/*
+ *
+ * Main styles
+ *
+ * Author :  Nadal Soler </> Front-end Developer.
+ *           nadal dot soler at gmail dot com
+ *           https://github.com/nadalsol
+ *           https://twitter.com/nadalsol
+ * Created:  Feb 2017.
+ *
  */
 
-body { background-color: white; }
+
+// Variables and mixins
+@import "variables";
+@import "mixins";
+
+// Reset and dependencies
+@import "reset/normalize";
+@import "reset/print";
+
+// Core CSS
+@import "core/buttons";
+@import "core/fonts";
+@import "core/forms";
+@import "core/scaffolding";
+@import "core/sprites";
+@import "core/state";
+@import "core/type";
+
+// Common
+@import "common/container";
+@import "common/cookies-msg";
+@import "common/footer";
+@import "common/header";
+
+// Partials
+@import "partials/how-it-works";
+@import "partials/note";
+@import "partials/signup";
+
