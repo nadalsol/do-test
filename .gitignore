@@ -1,4 +1,13 @@
+# OSX
 .DS_Store
-.sass-cache
+
+# Sass
+.sass-cache/
+*.css.map
+
+# Node
 node_modules
 npm-debug.log
+
+# Dist folder
+dist/
